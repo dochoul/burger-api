@@ -2,11 +2,6 @@ const jsonServer = require("json-server"); // importing json-server library
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 
-// '/about' 경로로 접속했을 때
-router.get("/about", async (req, res) => {
-  res.render("test", { test: "test" });
-});
-
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 8080; //  chose port from here like 8080, 3001
 
