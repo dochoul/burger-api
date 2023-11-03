@@ -1,7 +1,9 @@
 const jsonServer = require("json-server"); // importing json-server library
 const server = jsonServer.create();
 // const router = jsonServer.router("db.json");
-// const router = jsonServer.router("posts.json");
+// const router = jsonServer.router("posts.json
+
+const router = jsonServer.router();
 
 router.get("/", function (req, res, next) {
   res.render("index", { title: "index" });
